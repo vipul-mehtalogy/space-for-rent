@@ -34,7 +34,7 @@ export default function Home() {
               comfortable living environment.
             </p>
             <Link
-              href="/rooms-for-rent"
+              href="space-for-rent/rooms-for-rent"
               className="inline-block bg-blue-600 text-white px-5 py-2 rounded"
             >
               View Rooms

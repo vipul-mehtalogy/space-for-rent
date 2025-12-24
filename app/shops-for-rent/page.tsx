@@ -34,7 +34,7 @@ export default function ShopsForRentPage() {
       {shop.images?.length > 0 && (
         <div className="relative w-full h-64 md:h-72">
           <Image
-            src={shop.images[0]}
+            src={`/space-for-rent${shop.images[0]}`}
             alt={`${shop.name} for rent`}
             fill
             className="object-cover"
