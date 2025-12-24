@@ -28,7 +28,9 @@ export default function ShopsForRentPage() {
 
       {/* Shops */}
       <section className="grid gap-6 md:grid-cols-2">
-        {shopsData.shops.map((shop) => {
+        {shopsData.shops
+        .sort((a, b) => Number(b.available) - Number(a.available))
+        .map((shop) => {
           const isAvailable = shop.available;
 
           return (
