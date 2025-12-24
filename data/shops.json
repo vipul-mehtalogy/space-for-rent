@@ -1,0 +1,41 @@
+{
+  "commonFeatures": [
+    "Prime location with good footfall",
+    "Ground floor shops",
+    "Separate electricity sub-meter",
+    "Near Shani Mandir",
+    "Garden-facing property"
+  ],
+  "shops": [
+    {
+      "id": "shop-1",
+      "name": "Shop 1",
+      "size": "10x10 ft",
+      "facing": "South",
+      "features": ["Garden facing"],
+      "images": [
+        "/images/shops/shop1-1.jpg"
+      ]
+    },
+    {
+      "id": "shop-2",
+      "name": "Shop 2",
+      "size": "10.3x9 ft",
+      "facing": "West",
+      "features": ["Attached toilet", "Aluminum glass partition", "POP false ceiling"],
+      "images": [
+        "/images/shops/shop2-1.jpg"
+      ]
+    },
+    {
+      "id": "shop-3",
+      "name": "Shop 3",
+      "size": "12x13 ft",
+      "facing": "West",
+      "features": ["Water facility", "Channel Gate + Shutter", "POP False ceiling"],
+      "images": [
+        "/images/shops/shop3-1.jpg"
+      ]
+    }
+  ]
+}

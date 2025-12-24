@@ -1,0 +1,44 @@
+{
+  "commonFeatures": [
+    "10x10 ft room",
+    "2nd floor",
+    "Separate electricity sub-meter",
+    "Electricity rate ₹10/unit",
+    "Water filter",
+    "Free internet",
+    "Shared open balcony",
+    "Cloth drying facility",
+    "Large window, well-lit room",
+    "Near main road & public transport",
+    "Suitable for students",
+    "Preferred for girls"
+  ],
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "Room 1",
+      "amenities": [
+        "Single bed",
+        "Almira",
+        "Kitchen stand with wash basin"
+      ],
+      "images": [
+        "/images/rooms/room1-1.jpg",
+        "/images/rooms/room1-2.jpg"
+      ]
+    },
+    {
+      "id": "room-2",
+      "name": "Room 2",
+      "amenities": [
+        "Single bed",
+        "Almira",
+        "Kitchen stand with wash basin"
+      ],
+      "images": [
+        "/images/rooms/room2-1.jpg",
+        "/images/rooms/room2-2.jpg"
+      ]
+    }
+  ]
+}
