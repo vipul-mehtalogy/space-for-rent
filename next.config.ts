@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = "space-available-for-rent";
+const repoName = "space-for-rent";
 
 const nextConfig: NextConfig = {
   /* config options here */  
@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 
   basePath: `/${repoName}`,
   assetPrefix: `/${repoName}`,
-  
+
   images: {
     unoptimized: true
   }
