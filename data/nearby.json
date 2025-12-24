@@ -1,0 +1,17 @@
+[
+  { "label": "City Bus Stop", "distance": "100 m", "icon": "bus" },
+  { "label": "Grocery Store", "distance": "100 m", "icon": "shopping-cart" },
+  { "label": "Vegetable Market", "distance": "500 m", "icon": "leaf" },
+
+  { "label": "Medical Store / Pharmacy", "distance": "100 m", "icon": "pharmacy" },
+  { "label": "Hospital / Clinic", "distance": "300 m", "icon": "hospital" },
+  { "label": "ATM / Bank", "distance": "400 m", "icon": "bank" },
+
+  { "label": "Police Station", "distance": "1 km", "icon": "shield" },
+  { "label": "Park / Open Ground", "distance": "20 m", "icon": "park" },
+  { "label": "Salon", "distance": "100 m", "icon": "scissors" },
+
+  { "label": "Temple", "distance": "50 m", "icon": "temple" },
+  { "label": "Bengali Square", "distance": "200 m", "icon": "map-pin" },
+  { "label": "Telephone Nagar Square", "distance": "100 m", "icon": "map" }
+]

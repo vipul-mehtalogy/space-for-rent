@@ -1,4 +1,6 @@
 import Image from "next/image";
+import nearbyPlaces from "@/data/nearby.json";
+import NearbyPlaces from "@/components/NearbyPlaces";
 
 const MAP_EMBED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.141728508746!2d75.90189!3d22.7200584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2cc39a57301%3A0x6cc0bd0540aac68c!2sMehtalogy%20-%20197%20Goyal%20Nagar!5e0!3m2!1sen!2sin!4v1733720000000";
@@ -9,7 +11,9 @@ const DIRECTIONS_URL =
 export default function Footer() {
   return (
     <footer className="mt-16 border-t bg-gray-50">
+      <NearbyPlaces places={nearbyPlaces} />
       <div className="max-w-6xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-2">
+        
         {/* Left: Property Details */}
         <div>
           <h3 className="text-lg font-semibold mb-3">

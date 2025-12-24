@@ -1,7 +1,10 @@
 import shopsData from "@/data/shops.json";
 import Link from "next/link";
 import Image from "next/image";
+import nearbyPlaces from "@/data/nearby.json";
+import { buildNearbySeoText } from "@/lib/buildNearbySeoText";
 
+const seoText = buildNearbySeoText(nearbyPlaces);
 export const metadata = {
   title: "Commercial Shops for Rent – Prime Location",
   description:
@@ -12,7 +15,7 @@ export default function ShopsForRentPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
       <h1 className="text-3xl font-bold mb-6">Shops Available for Rent</h1>
-
+<p className="sr-only">{seoText}</p>
       {/* Common Features */}
       <section className="mb-10">
         <h2 className="text-xl font-semibold mb-3">Common Features</h2>
@@ -24,54 +27,68 @@ export default function ShopsForRentPage() {
       </section>
 
       {/* Shops */}
-     <section className="grid gap-6 md:grid-cols-2">
-  {shopsData.shops.map((shop) => (
-    <div
-      key={shop.id}
-      className="border rounded-lg overflow-hidden shadow-sm"
-    >
-      {/* Shop Image */}
-      {shop.images?.length > 0 && (
-        <div className="relative w-full h-64 md:h-72">
-          <Image
-            src={`/space-for-rent${shop.images[0]}`}
-            alt={`${shop.name} for rent`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority={false}
-          />
-        </div>
-      )}
+      <section className="grid gap-6 md:grid-cols-2">
+        {shopsData.shops.map((shop) => {
+          const isAvailable = shop.available;
 
-      {/* Shop Details */}
-      <div className="p-5">
-        <h3 className="text-lg font-semibold mb-1">
-          {shop.name}
-        </h3>
+          return (
+            <div
+              key={shop.id}
+              className={`border rounded-lg overflow-hidden shadow-sm relative ${!isAvailable ? "opacity-75" : ""
+                }`}
+            >
+              {/* Shop Image */}
+              {shop.images?.length > 0 && (
+                <div className="relative w-full h-64 md:h-72">
+                  <Image
+                    src={`/space-for-rent${shop.images[0]}`}
+                    alt={`${shop.name} for rent`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
 
-        <p className="text-gray-600 mb-2">
-          {shop.size} · {shop.facing}-facing
-        </p>
+                  {/* Availability Badge */}
+                  <span
+                    className={`absolute top-3 left-3 px-3 py-1 text-sm font-semibold rounded-full ${isAvailable
+                        ? "bg-green-600 text-white"
+                        : "bg-gray-800 text-white"
+                      }`}
+                  >
+                    {isAvailable ? "Available for Rent" : "Currently Not Available"}
+                  </span>
+                </div>
+              )}
 
-        {shop.features?.length > 0 && (
-          <ul className="text-gray-600 mb-3">
-            {shop.features.map((feature, i) => (
-              <li key={i}>• {feature}</li>
-            ))}
-          </ul>
-        )}
+              {/* Shop Details */}
+              <div className="p-5">
+                <h3 className="text-lg font-semibold mb-1">
+                  {shop.name}
+                </h3>
 
-        <Link
-          href="/rental-terms/shops"
-          className="text-blue-600 font-medium inline-block"
-        >
-          View Rental Terms →
-        </Link>
-      </div>
-    </div>
-  ))}
-</section>
+                <p className="text-gray-600 mb-2">
+                  {shop.size} · {shop.facing}-facing
+                </p>
+
+                {shop.features?.length > 0 && (
+                  <ul className="text-gray-600 mb-3">
+                    {shop.features.map((feature, i) => (
+                      <li key={i}>• {feature}</li>
+                    ))}
+                  </ul>
+                )}
+
+                <Link
+                  href="/rental-terms/shops"
+                  className="text-blue-600 font-medium inline-block"
+                >
+                  View Rental Terms →
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </section>
     </main>
   );
 }

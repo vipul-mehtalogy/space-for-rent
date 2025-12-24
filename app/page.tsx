@@ -12,7 +12,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="min-h-screen px-6 py-10 max-w-5xl mx-auto">
+      <main className="px-6 py-10 max-w-5xl mx-auto">
         {/* Hero Section */}
         <section className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">

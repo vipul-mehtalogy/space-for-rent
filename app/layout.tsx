@@ -33,6 +33,7 @@ export default function RootLayout({
 
         {children}
          <WhatsAppFloating />
+         
          <Footer />
       </body>
     </html>

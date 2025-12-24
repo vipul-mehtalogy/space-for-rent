@@ -12,30 +12,33 @@
       "name": "Shop 1",
       "size": "10x10 ft",
       "facing": "South",
-      "features": ["Garden facing"],
+      "features": ["Aluminum glass partition","Garden facing"],
       "images": [
         "/images/shops/shop1-1.jpg"
-      ]
+      ],
+      "available":false
     },
     {
       "id": "shop-2",
       "name": "Shop 2",
-      "size": "10.3x9 ft",
+      "size": "10x10 ft",
       "facing": "West",
       "features": ["Attached toilet", "Aluminum glass partition", "POP false ceiling"],
       "images": [
         "/images/shops/shop2-1.jpg"
-      ]
+      ],
+      "available":false
     },
     {
       "id": "shop-3",
       "name": "Shop 3",
-      "size": "12x13 ft",
+      "size": "8x13 ft",
       "facing": "West",
-      "features": ["Water facility", "Channel Gate + Shutter", "POP False ceiling"],
+      "features": ["Limited Water Connection", "Channel Gate + Shutter", "POP False ceiling"],
       "images": [
         "/images/shops/shop3-1.jpg"
-      ]
+      ],
+      "available":true
     }
   ]
 }
