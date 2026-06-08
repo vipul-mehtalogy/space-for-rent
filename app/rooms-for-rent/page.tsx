@@ -19,7 +19,9 @@ export default function RoomsForRentPage() {
       {/* Common Features */}
       <section className="mb-10">
         <h2 className="text-xl font-semibold mb-3">Common Features</h2>
-        <ul className="list-disc pl-6 text-gray-600">
+        <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300">
+        
+
           {roomsData.commonFeatures.map((feature, idx) => (
             <li key={idx}>{feature}</li>
           ))}
@@ -37,9 +39,8 @@ export default function RoomsForRentPage() {
       return (
         <div
           key={room.id}
-          className={`border rounded-lg p-5 relative ${
-            !isAvailable ? "opacity-70" : ""
-          }`}
+          className={`border dark:border-gray-600 rounded-lg p-5 relative dark:bg-gray-800 ${!isAvailable ? "opacity-70" : ""}`}
+
         >
           {/* Availability Badge */}
           <span
@@ -68,7 +69,8 @@ export default function RoomsForRentPage() {
             ))}
           </div>
 
-          <ul className="text-gray-600 mb-4">
+          <ul className="text-gray-600 dark:text-gray-300 mb-4">
+
             {room.amenities.map((a, i) => (
               <li key={i}>• {a}</li>
             ))}
@@ -83,7 +85,8 @@ export default function RoomsForRentPage() {
               View Rental Terms →
             </Link>
           ) : (
-            <span className="text-gray-500 font-medium">
+            <span className="text-gray-500 dark:text-gray-400 font-medium">
+
               Currently Occupied
             </span>
           )}

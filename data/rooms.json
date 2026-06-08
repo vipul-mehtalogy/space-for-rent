@@ -39,7 +39,7 @@
         "/images/rooms/room2-1.jpg",
         "/images/rooms/room2-2.jpg"
       ],
-      "available":false
+      "available":true
     }
   ]
 }
