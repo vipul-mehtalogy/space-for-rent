@@ -11,13 +11,15 @@ export default function ShopRentalTermsPage() {
         दुकान किराया शर्तें (संदर्भ हेतु)
       </h1>
 
-      <p className="text-gray-700 mb-6">
+      <p className="text-gray-700 dark:text-gray-300 mb-6">
+
         यह दुकान किरायानामा केवल संदर्भ उद्देश्य के लिए प्रदर्शित किया गया है।
         वास्तविक किरायानामा दोनों पक्षों की आपसी सहमति से पृथक रूप से निष्पादित
         किया जाएगा।
       </p>
 
-      <ol className="list-decimal pl-6 space-y-4 text-gray-800">
+      <ol className="list-decimal pl-6 space-y-4 text-gray-800 dark:text-gray-200">
+
         <li>
           किराये पर दी जाने वाली दुकान लगभग [Refer from shop number] फीट आकार की है,
           जो 197, गोयल नगर, इंदौर में स्थित है। दुकान [refer shop number] दिशा की ओर मुख है

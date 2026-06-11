@@ -7,7 +7,6 @@
     "Single bed",
     "Almirah",
     "Water filter",
-    "Free internet",
     "Shared open balcony",
     "Cloth hanger for drying",
     "Large window, well-lit room",
@@ -24,8 +23,8 @@
         "10 X 10 feet"
       ],
       "images": [
-        "/images/rooms/room1-1.jpg",
-        "/images/rooms/room1-2.jpg"
+        "/images/rooms/room1/room1-img.jpeg"
+        
       ],
       "available":false
     },
@@ -36,10 +35,10 @@
         "12 X 16 feet"
       ],
       "images": [
-        "/images/rooms/room2-1.jpg",
-        "/images/rooms/room2-2.jpg"
+        "/images/rooms/room2/room2a-img.jpeg",
+        "/images/rooms/room2/room2b-img.jpeg"
       ],
-      "available":false
+      "available":true
     }
   ]
 }

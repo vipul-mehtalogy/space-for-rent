@@ -10,8 +10,7 @@ export default function RoomRentalTerms() {
         Room Rental Terms (Reference)
       </h1>
 
-      <ul className="list-disc pl-6 text-gray-700 space-y-2">
-        <li>Electricity billed as per sub-meter (₹10/unit)</li>
+        <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">        <li>Electricity billed as per sub-meter (₹10/unit)</li>
         <li>Suitable for students; preference given to girls</li>
         <li>Room to be used strictly for residential purpose</li>
         <li>Cleanliness and maintenance responsibility of tenant</li>

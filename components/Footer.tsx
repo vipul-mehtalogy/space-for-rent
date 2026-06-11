@@ -10,8 +10,12 @@ const DIRECTIONS_URL =
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t bg-gray-50">
+    <footer className="mt-16 border-t bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
+      
+        <div className="max-w-6xl mx-auto px-6 pt-10">
+
       <NearbyPlaces places={nearbyPlaces} />
+      </div>
       <div className="max-w-6xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-2">
         
         {/* Left: Property Details */}
@@ -20,20 +24,20 @@ export default function Footer() {
             Property Location
           </h3>
 
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 dark:text-gray-300 mb-2">
             <strong>Mehta&apos;s Utsav Shree</strong><br />
             197, Goyal Nagar<br />
             Next to Shani Mandir<br />
             Indore, Madhya Pradesh
           </p>
 
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 dark:text-gray-300 mb-2">
             📞 <a href="tel:+919406614197" className="text-blue-600">
               +91 9406614197
             </a>
           </p>
 
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
             Located close to the main road with easy access to public transport.
           </p>
 
@@ -48,7 +52,8 @@ export default function Footer() {
         </div>
 
         {/* Right: Map */}
-        <div className="w-full h-[250px] rounded-lg overflow-hidden border">
+        <div className="w-full h-[250px] rounded-lg overflow-hidden border dark:border-gray-600">
+
           <iframe
             src={MAP_EMBED_URL}
             width="100%"
@@ -61,7 +66,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-sm text-gray-500 py-4 border-t">
+      <div className="text-center text-sm text-gray-500 dark:text-gray-400 py-4 border-t">
         © {new Date().getFullYear()} Space Available for Rent
       </div>
     </footer>

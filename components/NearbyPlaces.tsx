@@ -41,12 +41,12 @@ export default function NearbyPlaces({ places }: { places: any[] }) {
           return (
             <div
               key={i}
-              className="flex items-center gap-3 border rounded-lg p-3 bg-gray-50"
+              className="flex items-center gap-3 border dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-800"
             >
-              <Icon className="w-5 h-5 text-blue-600" />
+              <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
               <div>
                 <p className="text-sm font-medium">{place.label}</p>
-                <p className="text-xs text-gray-600">{place.distance}</p>
+                <p className="text-xs text-gray-600 dark:text-gray-400">{place.distance}</p>
               </div>
             </div>
           );
