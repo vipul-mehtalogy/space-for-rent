@@ -59,8 +59,8 @@ export default function RoomsForRentPage() {
           <div className="mb-4 grid grid-cols-2 gap-2">
             {room.images.map((imgSrc, i) => (
               <Image
-                key={i}
-                src={imgSrc}
+                key={i}                
+                src={`/space-for-rent${imgSrc}`}
                 alt={`${room.name} image ${i + 1}`}
                 width={300}
                 height={200}
